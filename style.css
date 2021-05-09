@@ -1,0 +1,245 @@
+body {
+  position: relative;
+  margin: 0;
+  min-width: 1408px;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.411);
+  
+  background-position: center;
+}
+
+.container {
+  max-width: 1408px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.page-header {
+  margin: 0;
+  padding: 40px 0;
+  text-align: right;
+  
+}
+
+.page-header a,
+.page-footer a {
+  text-align: right;
+  padding-bottom: 10px;
+  padding-top: 9px;
+  font-weight: 500;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: left;
+  color: inherit;
+}
+
+.page-header a:focus,
+.page-header a:hover {
+  color: #86afad;
+}
+
+.page-footer a:focus,
+.page-footer a:hover {
+  color: white;
+}
+
+
+.page-header a::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #86afad;
+  transition: width 200ms;
+}
+
+.page-footer a::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 200ms;
+}
+
+.page-header a:hover::after,
+.page-footer a:hover::after {
+  width: 100%;
+}
+
+.header-email,
+.footer-email {
+  padding-left: 28px;
+  background-image: url("img/icon-email.svg");
+}
+
+
+.header-inst,
+.footer-inst {
+  padding-left: 20px;
+  background-image: url("img/inst.svg");
+  background-size: 14%;
+  position: relative;
+
+}
+
+.header-inst:focus,
+.header-inst:hover,
+.footer-inst:focus,
+.footer-inst:hover {
+  background-image: url("img/inst-after.svg");
+  background-size: 14%;
+  
+}
+
+.header-email:focus,
+.header-email:hover,
+.footer-email:focus,
+.footer-email:hover {
+  background-image: url("img/icon-email-alt.svg");
+}
+
+.header-phone,
+.footer-phone {
+  padding-left: 21px;
+  background-image: url("img/icon-phone.svg");
+}
+
+.header-phone:focus,
+.header-phone:hover,
+.footer-phone:focus,
+.footer-phone:hover {
+  background-image: url("img/icon-phone-alt.svg");
+}
+
+.page-header a:active,
+.page-footer a:active {
+  opacity: 0.5;
+}
+
+.hero-image {
+  position: relative;
+  padding-top: 200px;
+  height: 798px;
+  
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 48px;
+}
+
+.hero-image .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-image::before {
+  position: absolute;
+  content: "";
+  top: 24px;
+  left: calc(50vw - 32px);
+  width: 800px;
+  height: 800px;
+  
+  background-repeat: no-repeat;
+}
+
+.hero-image::after {
+  position: absolute;
+  content: "";
+  height: 125px;
+  width: 100%;
+  bottom: 0;
+  background-color: #86afad;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 2px solid #86afad;
+}
+
+.heading {
+  text-align: center;
+  font-size: 96px;
+  line-height: 112px;
+  font-weight: 500;
+}
+
+.hero-image p {
+  text-align: center;
+  font-size: 40px;
+  line-height: 48px;
+  color: #5e9593;
+}
+
+
+
+
+.subheading {
+  text-align: center;
+  font-size: 72px;
+  line-height: 88px;
+  font-weight: 500;
+  color: #86afad;
+}
+
+.work {
+  margin-left: 2%;
+  text-align: center;
+}
+
+span {
+  color: orange;
+}
+
+
+.work h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.work p {
+  font-size: 20px;
+  text-align: center;
+}
+
+
+.button {
+  margin: 0;
+  padding: 8px 40px;
+  margin-bottom: 2%;
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #0b0c23;
+  background-color: #86afad;
+  box-shadow: 0 4px 16px rgba(249, 221, 121, 0.4);
+  border-radius: 24px;
+  transition: background-color 100ms, box-shadow 100ms;
+}
+
+.button:focus,
+.button:hover {
+  background-color: #86afad;
+  box-shadow: 0 4px 32px #86afad;
+}
+
+.button:active {
+  background-color: #86afad;
+  box-shadow: none;
+}
+
+.page-footer {
+  padding: 40px 0;
+  background-color: #86afad;
+}
+
